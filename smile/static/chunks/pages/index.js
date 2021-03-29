@@ -11694,7 +11694,7 @@ var VALID_LOADING_VALUES = ['lazy', 'eager', undefined];
 var loaders = new Map([['imgix', imgixLoader], ['cloudinary', cloudinaryLoader], ['akamai', akamaiLoader], ['default', defaultLoader]]);
 var VALID_LAYOUT_VALUES = ['fill', 'fixed', 'intrinsic', 'responsive', undefined];
 
-var _ref2 = {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/smile/image","loader":"default","domains":[]} || _imageConfig.imageConfigDefault,
+var _ref2 = {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"https://cdn.statically.io/gh/HiltonWS/hiltonws.github.io/master/smile/image","loader":"default","domains":[]} || _imageConfig.imageConfigDefault,
     configDeviceSizes = _ref2.deviceSizes,
     configImageSizes = _ref2.imageSizes,
     configLoader = _ref2.loader,
@@ -12896,7 +12896,7 @@ function getClientBuildManifest() {
 function getFilesForRoute(assetPrefix, route) {
   if (true) {
     return Promise.resolve({
-      scripts: [assetPrefix + '/smile/static/chunks/pages' + encodeURI((0, _getAssetPathFromRoute["default"])(route, '.js'))],
+      scripts: [assetPrefix + 'https://cdn.statically.io/gh/HiltonWS/hiltonws.github.io/master/smile/static/chunks/pages' + encodeURI((0, _getAssetPathFromRoute["default"])(route, '.js'))],
       // Styles are handled by `style-loader` in development:
       css: []
     });
@@ -12908,7 +12908,7 @@ function getFilesForRoute(assetPrefix, route) {
     }
 
     var allFiles = manifest[route].map(function (entry) {
-      return assetPrefix + '/smile/' + encodeURI(entry);
+      return assetPrefix + 'https://cdn.statically.io/gh/HiltonWS/hiltonws.github.io/master/smile/' + encodeURI(entry);
     });
     return {
       scripts: allFiles.filter(function (v) {
@@ -17823,7 +17823,7 @@ exports.__esModule=true;exports.normalizePathSep=normalizePathSep;exports.denorm
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-exports.__esModule=true;exports.imageConfigDefault=exports.VALID_LOADERS=void 0;const VALID_LOADERS=['default','imgix','cloudinary','akamai'];exports.VALID_LOADERS=VALID_LOADERS;const imageConfigDefault={deviceSizes:[640,750,828,1080,1200,1920,2048,3840],imageSizes:[16,32,48,64,96,128,256,384],path:'/smile/image',loader:'default',domains:[]};exports.imageConfigDefault=imageConfigDefault;
+exports.__esModule=true;exports.imageConfigDefault=exports.VALID_LOADERS=void 0;const VALID_LOADERS=['default','imgix','cloudinary','akamai'];exports.VALID_LOADERS=VALID_LOADERS;const imageConfigDefault={deviceSizes:[640,750,828,1080,1200,1920,2048,3840],imageSizes:[16,32,48,64,96,128,256,384],path:'https://cdn.statically.io/gh/HiltonWS/hiltonws.github.io/master/smile/image',loader:'default',domains:[]};exports.imageConfigDefault=imageConfigDefault;
 //# sourceMappingURL=image-config.js.map
 
 /***/ }),

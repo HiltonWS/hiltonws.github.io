@@ -858,7 +858,7 @@ function getClientBuildManifest() {
 function getFilesForRoute(assetPrefix, route) {
   if (true) {
     return Promise.resolve({
-      scripts: [assetPrefix + '/smile/static/chunks/pages' + encodeURI((0, _getAssetPathFromRoute["default"])(route, '.js'))],
+      scripts: [assetPrefix + 'https://cdn.statically.io/gh/HiltonWS/hiltonws.github.io/master/smile/static/chunks/pages' + encodeURI((0, _getAssetPathFromRoute["default"])(route, '.js'))],
       // Styles are handled by `style-loader` in development:
       css: []
     });
@@ -870,7 +870,7 @@ function getFilesForRoute(assetPrefix, route) {
     }
 
     var allFiles = manifest[route].map(function (entry) {
-      return assetPrefix + '/smile/' + encodeURI(entry);
+      return assetPrefix + 'https://cdn.statically.io/gh/HiltonWS/hiltonws.github.io/master/smile/' + encodeURI(entry);
     });
     return {
       scripts: allFiles.filter(function (v) {
