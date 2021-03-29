@@ -194,7 +194,7 @@ function _tryApplyUpdates() {
 }
 
 (0, _eventsource.getEventSourceWrapper)({
-  path: "".concat(assetPrefix, "https://cdn.statically.io/gh/HiltonWS/hiltonws.github.io/master/smile/webpack-hmr")
+  path: "".concat(assetPrefix, "https://cdn.statically.io/gh/HiltonWS/hiltonws.github.io/1.1.1/smile/webpack-hmr")
 }).addMessageListener(function (event) {
   if (event.data === "\uD83D\uDC93") {
     return;
@@ -1586,7 +1586,7 @@ function setupPing(assetPrefix, pathnameFn, retry) {
   exports.currentPage = currentPage = pathname; // close current EventSource connection
 
   closePing();
-  var url = "".concat(assetPrefix, "https://cdn.statically.io/gh/HiltonWS/hiltonws.github.io/master/smile/webpack-hmr?page=").concat(currentPage);
+  var url = "".concat(assetPrefix, "https://cdn.statically.io/gh/HiltonWS/hiltonws.github.io/1.1.1/smile/webpack-hmr?page=").concat(currentPage);
   evtSource = (0, _eventsource.getEventSourceWrapper)({
     path: url,
     timeout: 5000,
