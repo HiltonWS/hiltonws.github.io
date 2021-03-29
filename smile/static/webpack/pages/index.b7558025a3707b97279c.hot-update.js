@@ -33,7 +33,7 @@ var _jsxFileName = "C:\\Personal\\Projects\\smile\\pages\\index.js";
 
 
 function Home() {
-  var MODEL_URL = '/models';
+  var MODEL_URL = 'https://cdn.statically.io/gh/HiltonWS/hiltonws.github.io/master/smile/models';
   Promise.all([face_api_js__WEBPACK_IMPORTED_MODULE_6__["loadTinyFaceDetectorModel"](MODEL_URL), face_api_js__WEBPACK_IMPORTED_MODULE_6__["loadFaceLandmarkModel"](MODEL_URL), face_api_js__WEBPACK_IMPORTED_MODULE_6__["loadFaceExpressionModel"](MODEL_URL), face_api_js__WEBPACK_IMPORTED_MODULE_6__["loadFaceRecognitionModel"](MODEL_URL), face_api_js__WEBPACK_IMPORTED_MODULE_6__["loadSsdMobilenetv1Model"](MODEL_URL)]).then(start())["catch"](function (e) {
     return console.error(e);
   });
