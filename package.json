@@ -1,0 +1,12 @@
+{
+  "name": "hiltonws.github.io",
+  "version": "2.0.0",
+  "description": "My space, my lab!",
+  "main": "index.js",
+  "repository": "https://github.com/HiltonWS/hiltonws.github.io.git",
+  "author": "Hilton W. Silva <me@hilton.ws>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
