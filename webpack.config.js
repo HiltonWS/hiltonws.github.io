@@ -9,10 +9,10 @@ module.exports = {
     plugins: [new miniCssExtractPlugin()],
     output: {
         filename: "main.js",
-        path: path.resolve(__dirname, "dist"),
+        path: path.resolve(__dirname, "docs"),
     },
     devServer:{
-        static: path.resolve(__dirname, 'dist'),
+        static: path.resolve(__dirname, 'docs'),
         port: 8080,
         hot: true
     },
