@@ -4,7 +4,7 @@
   "description": "My space, my lab!",
   "scripts": {
     "start": "webpack serve --mode development",
-    "build": "webpack -w"
+    "build": "webpack b"
   },
   "repository": "https://github.com/HiltonWS/hiltonws.github.io.git",
   "author": "Hilton W. Silva <me@hilton.ws>",
@@ -16,8 +16,10 @@
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "css-loader": "^6.7.2",
+    "glob": "^8.1.0",
     "mini-css-extract-plugin": "^2.7.2",
     "postcss-loader": "^7.0.2",
+    "purgecss-webpack-plugin": "^5.0.0",
     "sass": "^1.56.2",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
