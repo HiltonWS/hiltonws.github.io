@@ -1,12 +1,18 @@
 // noinspection WebpackConfigHighlighting
-
+const glob = require('glob')
 const miniCssExtractPlugin = require('mini-css-extract-plugin')
+const {PurgeCSSPlugin} = require('purgecss-webpack-plugin')
 const path = require('path')
-
+const PATHS = {
+    src: path.join(__dirname, "src")
+}
 module.exports = {
     mode: 'development',
     entry: './src/js/main.js',
-    plugins: [new miniCssExtractPlugin()],
+    plugins: [new miniCssExtractPlugin(),
+              new PurgeCSSPlugin({
+                paths: glob.sync(`${PATHS.src}/**/*`, {nodir: true})
+              })],
     output: {
         filename: "main.js",
         path: path.resolve(__dirname, "docs"),
