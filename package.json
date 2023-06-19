@@ -10,7 +10,7 @@
   "author": "Hilton W. Silva <me@hilton.ws>",
   "license": "MIT",
   "dependencies": {
-    "@popperjs/core": "^2.11.7",
+    "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.2.3"
   },
   "devDependencies": {
@@ -23,7 +23,7 @@
     "sass": "^1.60.0",
     "sass-loader": "^13.2.1",
     "style-loader": "^3.3.2",
-    "webpack": "^5.76.2",
+    "webpack": "^5.87.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.1"
   }
