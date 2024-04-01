@@ -16,7 +16,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.17",
     "css-loader": "^6.8.1",
-    "glob": "^10.3.10",
+    "glob": "^10.3.12",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss-loader": "^7.0.2",
     "purgecss-webpack-plugin": "^5.0.0",
