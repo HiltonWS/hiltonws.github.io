@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
-    "css-loader": "^6.8.1",
+    "css-loader": "^7.0.0",
     "glob": "^10.3.10",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss-loader": "^7.0.2",
